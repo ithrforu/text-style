@@ -156,10 +156,10 @@ a:focus {
 }
 
 a:hover {
+	font-weight: bold;
 	border-bottom: unset;
 }
 
 a:active {
-	background: #a66;
-	color: white;
+	color: blue;
 }
