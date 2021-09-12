@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'abeezeeregular';
+	src: url('fonts/web-fonts/abeezee-regularsans-serif-webfont.woff2') format('woff2'),
+	     url('fonts/web-fonts/abeezee-regularsans-serif-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'afta_serifregular';
+	src: url('fonts/web-fonts/aftaserifthin-regularserif-webfont.woff2') format('woff2'),
+	     url('fonts/web-fonts/aftaserifthin-regularserif-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General setup */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	min-width: 1000px;
+	max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+	float: left;
+	width: 50%;
+}
+
+aside {
+	float: left;
+	width: 30%;
+}
+
+nav {
+	float: left;
+	width: 20%;
+}
+
+nav ul {
+
+}
+
+footer {
+	clear: both;
+}
+
+header, section, aside, nav, footer {
+	padding: 20px;
+}
+
+header, footer {
+	border-top: 5px solid #a66;
+	border-bottom: 5px solid #a66;
+}
+
+/* My code */
+
+html {
+	font-size: 10px;
+}
+
+h1, h2 {
+	letter-spacing: 4px;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'abeezeeregular', sans-serif;
+}
+
+h2 {
+	font-size: 2rem;
+	font-family: 'abeezeeregular', sans-serif;
+}
+
+p, ul, ol {
+	font-size: 1.5rem;
+	font-family: 'afta_serifregular', serif;
+	word-spacing: 1px;
+	line-height: 1.5;
+}
+
+section ul li {
+	list-style: square;
+}
+aside ul li {
+	list-style: none;
+	padding-left: 2rem;
+	background: url('list-icon-one.png') no-repeat 0 0 / 1.7rem 1.7rem;
+}
+
+nav ul li {
+	list-style: none;
+	font-size: 1.5em;
+	background: #a66;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+nav ul li a {
+	list-style: none;
+	display: block;
+	width: 100%;
+	height: 60px;
+	padding-top: 12px;
+}
+
+nav ul li a:link {
+	color: white;
+	border-bottom: unset;
+}
+
+nav ul li a:visited {
+	color: white;
+}
+
+nav ul li a:active {
+	color: white;
+}
+
+
+section h2 + p {
+	text-indent: 20px;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	padding: 2px 1px 0;
+}
+
+a[href*="http"] {
+	background: url('icon.png') no-repeat 100% 0 / 14px 14px;
+	padding-right: 20px;
+}
+
+a:link {
+	color: red;
+	border-bottom: 1px solid;
+}
+
+a:visited {
+	color: #a66;
+}
+
+a:focus {
+	border-bottom: unset;
+}
+
+a:hover {
+	border-bottom: unset;
+}
+
+a:active {
+	background: #a66;
+	color: white;
+}
