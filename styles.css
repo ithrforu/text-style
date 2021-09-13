@@ -91,13 +91,13 @@ p, ul, ol {
 section ul li {
 	list-style: square;
 }
-aside ul li {
+aside li {
 	list-style: none;
 	padding-left: 2rem;
 	background: url('list-icon-one.png') no-repeat 0 0 / 1.7rem 1.7rem;
 }
 
-nav ul li {
+nav li {
 	list-style: none;
 	font-size: 1.5em;
 	background: #a66;
@@ -105,7 +105,7 @@ nav ul li {
 	text-align: center;
 }
 
-nav ul li a {
+nav li a {
 	list-style: none;
 	display: block;
 	width: 100%;
@@ -113,20 +113,11 @@ nav ul li a {
 	padding-top: 12px;
 }
 
-nav ul li a:link {
+nav li a:link, nav li a:visited, nav li a:active {
 	color: white;
 	border-bottom: unset;
 }
-
-nav ul li a:visited {
-	color: white;
-}
-
-nav ul li a:active {
-	color: white;
-}
-
-
+	
 section h2 + p {
 	text-indent: 20px;
 }
@@ -151,11 +142,7 @@ a:visited {
 	color: #a66;
 }
 
-a:focus {
-	border-bottom: unset;
-}
-
-a:hover {
+a:focus, a:hover {
 	font-weight: bold;
 	border-bottom: unset;
 }
